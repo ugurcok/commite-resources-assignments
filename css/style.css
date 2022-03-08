@@ -19,34 +19,46 @@ body {
 
 aside {
   width: 15vw;
-  padding: 30px 10px;
+  padding: 10px;
   border-right: 1px dashed #fff;
 }
 
+h3 {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+h3 > a {
+  float: right;
+  font-size: 14px;
+}
+
 h1 {
-  margin-bottom: 30px;
-  font-size: 20px;
   text-align: center;
+  margin-bottom: 1.5em;
 }
 
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 1.5em;
   font-size: 18px;
 }
 
 ul {
   padding-left: 20px;
-  list-style: none;
+  list-style: circle;
 }
 
 a {
-  font-size: 16px;
-  line-height: 2em;
   text-decoration: none;
 }
 
+li > a {
+  font-size: 16px;
+  line-height: 2em;
+}
+
 iframe {
-  width: 80vw;
+  width: 85vw;
   height: 100vh;
-  padding-left: 50px;
+  padding-left: 25px;
 }
