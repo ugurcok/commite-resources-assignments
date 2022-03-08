@@ -17,7 +17,7 @@ body {
   display: flex;
 }
 
-aside {
+#sidebar-nav {
   width: 15vw;
   padding: 10px;
   border-right: 1px dashed #fff;
@@ -35,11 +35,11 @@ h3 > a {
 
 h1 {
   text-align: center;
-  margin-bottom: 1.5em;
+  margin: 2em auto;
 }
 
 h2 {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-size: 18px;
 }
 
@@ -57,8 +57,19 @@ li > a {
   line-height: 2em;
 }
 
-iframe {
+/* iframe {
   width: 85vw;
   height: 100vh;
+  padding: 8px;
   padding-left: 25px;
+} */
+
+#main {
+  margin-left: 25px;
+  width: 85vw;
+  height: 100vh;
+}
+
+#content {
+  padding: 8px;
 }
