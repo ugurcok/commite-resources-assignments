@@ -4,40 +4,65 @@
   margin: 0;
   padding: 0;
   color: white;
-  font: 300 20px "Ubuntu", sans-serif;
+  font: 300 16px "Ubuntu", sans-serif;
 }
 
 body {
-  background-color: #1b3664;
+  background-color: #2a3035;
 }
 
-/* .flex-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
+a {
+  text-decoration: none;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+/* .fs-20 {
+  font-size: 20px;
 } */
+
+.fs-18 {
+  font-size: 18px;
+}
+
+/* .fs-17 {
+  font-size: 17px;
+} */
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.ls-circle {
+  list-style: circle;
+}
 
 #sidebar-nav {
   width: 15vw;
   height: 100%;
   padding: 10px;
-  /* background-color: #0d1727; */
   border-right: 1px dashed #fff;
   position: fixed;
   z-index: 1;
-  overflow-x: hidden;
   top: 0;
   left: 0;
+  overflow-x: hidden;
+  background-color: #1b3664;
 }
 
-aside > p {
+.lang-container {
   height: 20px;
   margin-bottom: 20px;
 }
 
-aside > p > a {
+#lang {
   float: right;
-  font-size: 14px;
+}
+
+#lang:hover {
+  color: #0278e0;
 }
 
 #logo {
@@ -45,31 +70,21 @@ aside > p > a {
   margin: 2em auto;
 }
 
-h2 {
+#sidebar-nav > h2 {
   margin-bottom: 1em;
-  font-size: 18px;
 }
 
-ul {
+#nav-links {
   padding-left: 20px;
-  list-style: circle;
 }
 
-a {
-  text-decoration: none;
-}
-
-li > a {
-  font-size: 16px;
+#nav-links > li {
   line-height: 2em;
 }
 
-/* iframe {
-  width: 85vw;
-  height: 100vh;
-  padding: 8px;
-  padding-left: 25px;
-} */
+#nav-links > li > a:hover {
+  color: #0278e0;
+}
 
 #main {
   margin-left: calc(15vw + 41px);
@@ -77,36 +92,39 @@ li > a {
 
 #content {
   line-height: 2em;
-  margin: 90px;
-  font-size: 16px;
+  padding: 90px;
+  /* height: 100vh; */
 }
 
+/* id = week-1 */
 #content > h1 {
-  margin-bottom: 50px;
-}
-
-#content > h1 > strong {
-  font-size: 20px;
-  line-height: 2em;
+  margin-bottom: 2em;
   font-weight: 500;
 }
 
 #content > h2 {
+  line-height: 2em;
   font-size: 18px;
-  line-height: 0.75em;
 }
 
 #content > p {
-  margin-top: 50px;
-  font-size: 16px;
+  margin-top: 2em;
 }
 
-#content > ol {
-  margin-top: 50px;
+#content > ol,
+#content > ul {
+  margin-top: 2.5em;
   padding-left: 50px;
 }
 
-#content > ol > li {
-  font-size: 16px;
+#content > ol > li,
+#content > ul > li {
   line-height: 2em;
 }
+
+/* iframe {
+  width: 100%;
+  height: 100vh;
+  padding: 8px;
+  padding-left: 25px;
+} */
