@@ -39,6 +39,10 @@ a {
   list-style: circle;
 }
 
+.fs-i {
+  font-style: italic;
+}
+
 #sidebar-nav {
   width: 15vw;
   height: 100%;
@@ -82,8 +86,17 @@ a {
   line-height: 2em;
 }
 
-#nav-links > li > a:hover {
+#nav-links > li > a:hover,
+#resources-links > li > a:hover {
   color: #0278e0;
+}
+
+#resources-links > li > a:hover + span {
+  color: greenyellow;
+}
+
+#resources-links > li > span {
+  float: right;
 }
 
 #main {
@@ -93,6 +106,7 @@ a {
 #content {
   line-height: 2em;
   padding: 90px;
+  padding-right: 270px;
   /* height: 100vh; */
 }
 
@@ -109,6 +123,15 @@ a {
 
 #content > p {
   margin-top: 2em;
+}
+
+#content > #iframe-button {
+  background-color: darkred;
+  color: greenyellow;
+  line-height: 1.5em;
+  padding: 5px;
+  border-radius: 15px;
+  font-weight: 400;
 }
 
 #content > ol,
