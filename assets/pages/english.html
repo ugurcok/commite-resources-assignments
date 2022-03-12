@@ -108,35 +108,35 @@
         margin-left: calc(15vw + 41px);
       }
 
-      #content {
+      .content {
         line-height: 2em;
         padding: 90px;
         padding-right: 270px;
       }
 
       /* id = week-1 */
-      #content > h1 {
+      .content > h1 {
         margin-bottom: 2em;
         font-weight: 500;
       }
 
-      #content > h2 {
+      .content > h2 {
         line-height: 2em;
         font-size: 18px;
       }
 
-      #content > p {
+      .content > p {
         margin-top: 2em;
       }
 
-      #content > ol,
-      #content > ul {
+      .content > ol,
+      .content > ul {
         margin-top: 2.5em;
         padding-left: 50px;
       }
 
-      #content > ol > li,
-      #content > ul > li {
+      .content > ol > li,
+      .content > ul > li {
         line-height: 2em;
       }
 
@@ -168,8 +168,8 @@
     </aside>
 
     <section id="main">
-      <article id="content">
-        <h1 id="week-1" class="fs-22">Week 1</h1>
+      <article id="week-1" class="content">
+        <h1 class="fs-22">Week 1</h1>
         <h2><img class="icons" src="../img/book.png" /> &nbsp; Meeting Subjects</h2>
         <hr />
         <p>List of topics covered at the meeting.</p>
@@ -181,7 +181,7 @@
           <li>Contributing on Github with Pull Requests</li>
         </ol>
         <ul>
-          <li><a target="_blank" href="../../meeting-repositories/week-1/index.html">{ Meeting Codes }</a></li>
+          <li><a target="_blank" href="../../meeting-repositories/week-1/index.html">{ Meeting Codes: HTML & CSS Fundamentals } </a></li>
         </ul>
         <br />
         <br />
@@ -216,6 +216,39 @@
           <li><a target="_blank" href="https://youtu.be/0JxhGm8NKYE">[TR] Github Pages Usage</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
         </ul>
         <!-- <button id="iframe-button" class="fs-14">Click</button> // page loader-->
+      </article>
+
+      <article id="week-2" class="content">
+        <h1 id="week-2" class="fs-22">Week 2</h1>
+        <h2><img class="icons" src="../img/book.png" /> &nbsp; Meeting Subjects</h2>
+        <hr />
+        <p>List of topics covered at the meeting.</p>
+        <ol>
+          <li>Introduction to Bootstrap</li>
+          <li>Javascript Data Types and Data Structures</li>
+          <li>Javascript Variables</li>
+          <li>Javascript Functions</li>
+          <li>Making a Counter App with Javascript</li>
+        </ol>
+        <ul>
+          <li><a target="_blank" href="../../meeting-repositories/week-2/index.html">{ Meeting Codes: JS Counter App }</a></li>
+        </ul>
+        <br />
+        <br />
+        <h2><img class="icons" src="../img/click.png" /> &nbsp; Shared Resources</h2>
+        <hr />
+        <p>Various resources shared in and after the live meeting. You may inspect them for further understanding of the subject.</p>
+        <ul id="resources-links">
+          <li><a target="_blank" href="https://www.freecodecamp.org/learn/">[EN] freeCodeCamp Trainings</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://javascript.info/">[EN] The Modern JavaScript Tutorial</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://www.w3schools.com/tags/att_script_defer.asp">[EN] W3Schools: Script defer Attribute</a><span class="fs-14 fs-i">Oğuz Yürken</span></li>
+          <li><a target="_blank" href="https://www.javascripttutorial.net/javascript-anonymous-functions/">[EN] JavaScript Anonymous Functions?</a><span class="fs-14 fs-i">Berkin Alp</span></li>
+        </ul>
+        <br />
+        <br />
+        <h2><img class="icons" src="../img/assignment.png" /> &nbsp; Assignment</h2>
+        <hr />
+        <p>Create a color flipper app that will be used to change the background color when clicked. Colors can be picked predefined or random.</p>
       </article>
     </section>
     <!-- <script>
