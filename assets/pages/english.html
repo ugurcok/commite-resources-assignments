@@ -24,6 +24,10 @@
         text-decoration: none;
       }
 
+      a:hover {
+        color: #0278e0;
+      }
+
       .fs-22 {
         font-size: 22px;
       }
@@ -87,10 +91,10 @@
         line-height: 2em;
       }
 
-      #nav-links > li > a:hover,
+      /* #nav-links > li > a:hover,
       #resources-links > li > a:hover {
         color: #0278e0;
-      }
+      } */
 
       #resources-links > li > a:hover + span {
         color: greenyellow;
@@ -187,12 +191,16 @@
           <li>Basic Javascript</li>
           <li>Contributing on Github with Pull Requests</li>
         </ol>
+        <ul>
+          <li><a target="_blank" href="../../meeting-repositories/week-1/index.html">{ Meeting Repo }</a></li>
+        </ul>
         <br />
         <br />
 
         <h2><img class="icons" src="../img/click.png" /> &nbsp; Shared Resources</h2>
         <hr />
         <p>Various resources shared in and after the live meeting. You may inspect them for further understanding of the subject.</p>
+
         <ul id="resources-links">
           <li><a target="_blank" href="https://reactjs.org/docs/getting-started.html">[EN] React Documentation</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
           <li><a target="_blank" href="https://github.com/EmreSamurlu/React-Simple-Todo-App">[TR] Example Project: Todo App with React</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
@@ -221,13 +229,13 @@
         <!-- <button id="iframe-button" class="fs-14">Click</button> // page loader-->
       </article>
     </section>
-    <script>
+    <!-- <script>
       let iframeButton = document.querySelector("#iframe-button");
       iframeButton.addEventListener("click", changeContent);
 
       function changeContent() {
         document.querySelector("#main").innerHTML = `<iframe src="../week-1/index.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>`;
       }
-    </script>
+    </script> -->
   </body>
 </html>
