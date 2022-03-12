@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources Index [EN]</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300;400;500&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font: 300 16px "Ubuntu", sans-serif;
+      }
+
+      body {
+        background-color: #0d1727;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0278e0;
+      }
+
+      .fs-22 {
+        font-size: 22px;
+      }
+
+      .fs-18 {
+        font-size: 18px;
+      }
+
+      .fs-14 {
+        font-size: 14px;
+      }
+
+      .ls-circle {
+        list-style: circle;
+      }
+
+      .fs-i {
+        font-style: italic;
+      }
+
+      #sidebar-nav {
+        width: 15vw;
+        height: 100%;
+        padding: 10px;
+        border-right: 1px dashed #fff;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        background-color: #1b3664;
+      }
+
+      .lang-container {
+        height: 20px;
+        margin-bottom: 20px;
+      }
+
+      #lang {
+        float: right;
+      }
+
+      #lang:hover {
+        color: #0278e0;
+      }
+
+      #logo {
+        text-align: center;
+        margin: 2em auto;
+      }
+
+      #sidebar-nav > h2 {
+        margin-bottom: 1em;
+      }
+
+      #nav-links {
+        padding-left: 20px;
+      }
+
+      #nav-links > li {
+        line-height: 2em;
+      }
+
+      /* #nav-links > li > a:hover,
+      #resources-links > li > a:hover {
+        color: #0278e0;
+      } */
+
+      #resources-links > li > a:hover + span {
+        color: greenyellow;
+      }
+
+      #resources-links > li > span {
+        float: right;
+      }
+
+      #main {
+        margin-left: calc(15vw + 41px);
+      }
+
+      #content {
+        line-height: 2em;
+        padding: 90px;
+        padding-right: 270px;
+      }
+
+      /* id = week-1 */
+      #content > h1 {
+        margin-bottom: 2em;
+        font-weight: 500;
+      }
+
+      #content > h2 {
+        line-height: 2em;
+        font-size: 18px;
+      }
+
+      #content > p {
+        margin-top: 2em;
+      }
+
+      #content > ol,
+      #content > ul {
+        margin-top: 2.5em;
+        padding-left: 50px;
+      }
+
+      #content > ol > li,
+      #content > ul > li {
+        line-height: 2em;
+      }
+
+      .icons {
+        width: 24px;
+        filter: invert(100%);
+        position: relative;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside id="sidebar-nav">
+      <div class="lang-container">
+        <a id="lang" class="fs-14" href="./turkish.html">TR</a>
+      </div>
+
+      <h1 id="logo"><a class="fs-18" href="../../index.html">Fullstack Project Group</a></h1>
+      <h2>Index</h2>
+      <ul id="nav-links" class="ls-circle">
+        <li><a href="./english.html#week-1">Week 1</a></li>
+        <li><a href="./english.html#week-2">Week 2</a></li>
+        <!-- 
+        <li><a href="./english.html#week-3">Week 3</a></li>
+        <li><a href="./english.html#week-4">Week 4</a></li>
+        <li><a href="./english.html#week-5">Week 5</a></li> 
+        -->
+      </ul>
+    </aside>
+
+    <section id="main">
+      <article id="content">
+        <h1 id="week-1" class="fs-22">Week 1</h1>
+        <h2><img class="icons" src="../img/book.png" /> &nbsp; Meeting Subjects</h2>
+        <hr />
+        <p>List of topics covered at the meeting.</p>
+        <ol>
+          <li>Introduction to HTML</li>
+          <li>Introduction to CSS</li>
+          <li>Basic Git & Github</li>
+          <li>Basic Javascript</li>
+          <li>Contributing on Github with Pull Requests</li>
+        </ol>
+        <ul>
+          <li><a target="_blank" href="../../meeting-repositories/week-1/index.html">{ Meeting Repo }</a></li>
+        </ul>
+        <br />
+        <br />
+
+        <h2><img class="icons" src="../img/click.png" /> &nbsp; Shared Resources</h2>
+        <hr />
+        <p>Various resources shared in and after the live meeting. You may inspect them for further understanding of the subject.</p>
+
+        <ul id="resources-links">
+          <li><a target="_blank" href="https://reactjs.org/docs/getting-started.html">[EN] React Documentation</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://github.com/EmreSamurlu/React-Simple-Todo-App">[TR] Example Project: Todo App with React</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://github.com/elsewhencode/project-guidelines">[EN] Project Guidelines</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://medium.com/frontend-development-with-js/react-nedir-react-nasıl-çalışır-a19a2a3dbf0a">[TR] What is React?</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://medium.com/@esmahaber/temel-javascript-notlar%C4%B1-a1635b6db1e7">[TR] Basic Javascript Notes</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://aliozgur.gitbooks.io/git101/content/bolum_1_-_baslangic/">[TR] Intro to Git</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://devcenter.heroku.com/">[EN] Heroku Documentation</a><span class="fs-14 fs-i">Turgay Turgut Erkal, Soner Şimşek</span></li>
+          <li><a target="_blank" href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">[EN] VSCode Keyboard Shortcuts (Windows)</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://app.patika.dev/moduller/html/emmet-ile-daha-hizli-html-yapilari-olusturmak">[TR] Patika: Emmet Training</a><span class="fs-14 fs-i">Taha Kılıç</span></li>
+          <li><a target="_blank" href="http://www.99lime.com/_bak/topics/you-only-need-10-tags/">[EN] Commonly used 10 HTML Tags</a><span class="fs-14 fs-i">Burak Balcı</span></li>
+          <li><a target="_blank" href="https://www.w3schools.com/css/css_specificity.asp">[EN] CSS Specificity</a><span class="fs-14 fs-i">Hasan Umut Yağcı</span></li>
+          <li><a target="_blank" href="https://caniuse.com">[EN] Can I Use (Browser compatibility checker)</a><span class="fs-14 fs-i">Hasan Umut Yağcı</span></li>
+          <li><a target="_blank" href="https://rogerdudler.github.io/git-guide/index.html">[EN] Git Guide</a><span class="fs-14 fs-i">Oğuz Yürken</span></li>
+          <li><a target="_blank" href="https://www.gitkraken.com/">[EN] Git Kraken (Git GUI App)</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://github.com/MicrosoftDocs/live-share">[EN] Live Share Documentation</a><span class="fs-14 fs-i">Turgay Turgut Erkal</span></li>
+          <li><a target="_blank" href="https://github.com/arslanbilal/git-cheat-sheet">[EN] Git and Git Flow Cheat Sheet</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://github.com/reactdersleri/react-icin-javascript">[TR] Javascript for React [TR]</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://youtube.com/playlist?list=PL8IHDq7oEkgGuhjVN2_lr1F8bmEgdetXy">[TR] Javascript Features for React</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://codersclub.co/">[TR] Codersclub (Analyzing & Rating Platform for Github Profiles)</a><span class="fs-14 fs-i">Feride Mavigök</span></li>
+          <li><a target="_blank" href="https://www.figma.com/community">[EN] Figma (UI Design App)</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://www.figma.com/community/file/1019155319918719973">[EN] Example: Login Page UI Design</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://lib.yemreak.com/proje-yonetimi/kontrol">[TR] Project Management</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://youtu.be/0JxhGm8NKYE">[TR] Github Pages Usage</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+        </ul>
+        <!-- <button id="iframe-button" class="fs-14">Click</button> // page loader-->
+      </article>
+    </section>
+    <!-- <script>
+      let iframeButton = document.querySelector("#iframe-button");
+      iframeButton.addEventListener("click", changeContent);
+
+      function changeContent() {
+        document.querySelector("#main").innerHTML = `<iframe src="../week-1/index.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>`;
+      }
+    </script> -->
+  </body>
+</html>
