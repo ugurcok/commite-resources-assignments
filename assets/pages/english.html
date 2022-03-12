@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TBD</title>
+    <title>Resources Index [EN]</title>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300;400;500&display=swap");
@@ -17,7 +17,7 @@
       }
 
       body {
-        background-color: #80776e;
+        background-color: #0d1727;
       }
 
       a {
@@ -125,15 +125,6 @@
         margin-top: 2em;
       }
 
-      #content > #iframe-button {
-        background-color: darkred;
-        color: greenyellow;
-        line-height: 1.5em;
-        padding: 5px;
-        border-radius: 15px;
-        font-weight: 400;
-      }
-
       #content > ol,
       #content > ul {
         margin-top: 2.5em;
@@ -145,12 +136,21 @@
         line-height: 2em;
       }
 
+      .icons {
+        width: 24px;
+        filter: invert(100%);
+        position: relative;
+        top: 5px;
+      }
+
       /* 
-      iframe {
-        width: 100%;
-        height: 100vh;
-        padding: 8px;
-        padding-left: 25px;
+      #content > #iframe-button {
+        background-color: darkred;
+        color: greenyellow;
+        line-height: 1.5em;
+        padding: 5px;
+        border-radius: 15px;
+        font-weight: 400;
       }
       */
     </style>
@@ -177,44 +177,47 @@
     <section id="main">
       <article id="content">
         <h1 id="week-1" class="fs-22">Week 1</h1>
-        <h2>Meeting Subjects</h2>
+        <h2><img class="icons" src="../img/book.png" /> &nbsp; Meeting Subjects</h2>
         <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, architecto!</p>
+        <p>List of topics covered at the meeting.</p>
         <ol>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>Introduction to HTML</li>
+          <li>Introduction to CSS</li>
           <li>Basic Git & Github</li>
           <li>Basic Javascript</li>
+          <li>Contributing on Github with Pull Requests</li>
         </ol>
         <br />
         <br />
-        <h2>Shared Resources</h2>
+
+        <h2><img class="icons" src="../img/click.png" /> &nbsp; Shared Resources</h2>
         <hr />
-        <p>Various resources shared in the live meeting are below. You may inspect them for further understanding of the topics. Click on the document name to access its source. (The person who shared the resource is written next to it)</p>
+        <p>Various resources shared in and after the live meeting. You may inspect them for further understanding of the subject.</p>
+        <br />
         <ul id="resources-links">
-          <li><a target="_blank" href="https://tr.reactjs.org/docs/hello-world.html">React Documentation</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
-          <li><a target="_blank" href="https://github.com/EmreSamurlu/React-Simple-Todo-App">Example Project: Todo App with React</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
-          <li><a target="_blank" href="https://github.com/elsewhencode/project-guidelines">Project Guidelines</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://medium.com/frontend-development-with-js/react-nedir-react-nasıl-çalışır-a19a2a3dbf0a">What is React?</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://medium.com/@esmahaber/temel-javascript-notlar%C4%B1-a1635b6db1e7">Basic Javascript Notes</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://aliozgur.gitbooks.io/git101/content/bolum_1_-_baslangic/">Intro to Git</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://devcenter.heroku.com/">Heroku Documentation</a><span class="fs-14 fs-i">Turgay Turgut Erkal, Soner Şimşek</span></li>
-          <li><a target="_blank" href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">VSCode Keyboard Shortcuts (Windows)</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
-          <li><a target="_blank" href="https://app.patika.dev/moduller/html/emmet-ile-daha-hizli-html-yapilari-olusturmak">Patika: Emmet Training</a><span class="fs-14 fs-i">Taha Kılıç</span></li>
-          <li><a target="_blank" href="http://www.99lime.com/_bak/topics/you-only-need-10-tags/">Commonly used 10 HTML Tags</a><span class="fs-14 fs-i">Burak Balcı</span></li>
-          <li><a target="_blank" href="https://www.w3schools.com/css/css_specificity.asp">CSS Specificity</a><span class="fs-14 fs-i">Hasan Umut Yağcı</span></li>
-          <li><a target="_blank" href="https://caniuse.com">Can I Use (Browser compatibility checker)</a><span class="fs-14 fs-i">Hasan Umut Yağcı</span></li>
-          <li><a target="_blank" href="http://rogerdudler.github.io/git-guide/index.tr.html">Git Guide</a><span class="fs-14 fs-i">Oğuz Yürken</span></li>
-          <li><a target="_blank" href="https://www.gitkraken.com/">Git Kraken (Git GUI App)</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://github.com/MicrosoftDocs/live-share">Live Share Documentation</a><span class="fs-14 fs-i">Turgay Turgut Erkal</span></li>
-          <li><a target="_blank" href="https://github.com/arslanbilal/git-cheat-sheet">Git and Git Flow Cheat Sheet</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://github.com/reactdersleri/react-icin-javascript">Javascript for React [TR]</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://youtube.com/playlist?list=PL8IHDq7oEkgGuhjVN2_lr1F8bmEgdetXy">Javascript Features for React</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://codersclub.co/">Codersclub (Analyzing & Rating Platform for Github Profiles)</a><span class="fs-14 fs-i">Feride Mavigök</span></li>
-          <li><a target="_blank" href="https://www.figma.com/community">Figma (UI Design App)</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://www.figma.com/community/file/1019155319918719973">Example: Login Page UI Design</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://lib.yemreak.com/proje-yonetimi/kontrol">Project Management</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
-          <li><a target="_blank" href="https://youtu.be/0JxhGm8NKYE">Github Pages Usage</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://reactjs.org/docs/getting-started.html">[EN] React Documentation</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://github.com/EmreSamurlu/React-Simple-Todo-App">[TR] Example Project: Todo App with React</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://github.com/elsewhencode/project-guidelines">[EN] Project Guidelines</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://medium.com/frontend-development-with-js/react-nedir-react-nasıl-çalışır-a19a2a3dbf0a">[TR] What is React?</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://medium.com/@esmahaber/temel-javascript-notlar%C4%B1-a1635b6db1e7">[TR] Basic Javascript Notes</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://aliozgur.gitbooks.io/git101/content/bolum_1_-_baslangic/">[TR] Intro to Git</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://devcenter.heroku.com/">[EN] Heroku Documentation</a><span class="fs-14 fs-i">Turgay Turgut Erkal, Soner Şimşek</span></li>
+          <li><a target="_blank" href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">[EN] VSCode Keyboard Shortcuts (Windows)</a><span class="fs-14 fs-i">Emre Samurlu</span></li>
+          <li><a target="_blank" href="https://app.patika.dev/moduller/html/emmet-ile-daha-hizli-html-yapilari-olusturmak">[TR] Patika: Emmet Training</a><span class="fs-14 fs-i">Taha Kılıç</span></li>
+          <li><a target="_blank" href="http://www.99lime.com/_bak/topics/you-only-need-10-tags/">[EN] Commonly used 10 HTML Tags</a><span class="fs-14 fs-i">Burak Balcı</span></li>
+          <li><a target="_blank" href="https://www.w3schools.com/css/css_specificity.asp">[EN] CSS Specificity</a><span class="fs-14 fs-i">Hasan Umut Yağcı</span></li>
+          <li><a target="_blank" href="https://caniuse.com">[EN] Can I Use (Browser compatibility checker)</a><span class="fs-14 fs-i">Hasan Umut Yağcı</span></li>
+          <li><a target="_blank" href="https://rogerdudler.github.io/git-guide/index.html">[EN] Git Guide</a><span class="fs-14 fs-i">Oğuz Yürken</span></li>
+          <li><a target="_blank" href="https://www.gitkraken.com/">[EN] Git Kraken (Git GUI App)</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://github.com/MicrosoftDocs/live-share">[EN] Live Share Documentation</a><span class="fs-14 fs-i">Turgay Turgut Erkal</span></li>
+          <li><a target="_blank" href="https://github.com/arslanbilal/git-cheat-sheet">[EN] Git and Git Flow Cheat Sheet</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://github.com/reactdersleri/react-icin-javascript">[TR] Javascript for React [TR]</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://youtube.com/playlist?list=PL8IHDq7oEkgGuhjVN2_lr1F8bmEgdetXy">[TR] Javascript Features for React</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://codersclub.co/">[TR] Codersclub (Analyzing & Rating Platform for Github Profiles)</a><span class="fs-14 fs-i">Feride Mavigök</span></li>
+          <li><a target="_blank" href="https://www.figma.com/community">[EN] Figma (UI Design App)</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://www.figma.com/community/file/1019155319918719973">[EN] Example: Login Page UI Design</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://lib.yemreak.com/proje-yonetimi/kontrol">[TR] Project Management</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
+          <li><a target="_blank" href="https://youtu.be/0JxhGm8NKYE">[TR] Github Pages Usage</a><span class="fs-14 fs-i">Ziar Parvaiz</span></li>
         </ul>
         <!-- <button id="iframe-button" class="fs-14">Click</button> // page loader-->
       </article>
